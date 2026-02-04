@@ -105,7 +105,8 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 400;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .nav-center li a.active {
@@ -114,6 +115,8 @@ body {
 
 .nav-center li a:hover {
     color: var(--brand-color);
+    transform: scale(1.15);
+    text-shadow: 0 5px 15px rgba(146, 77, 62, 0.2);
 }
 
 /* --- Hero Section --- */
