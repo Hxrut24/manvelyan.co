@@ -198,30 +198,93 @@ body {
     font-weight: 400;
 }
 
-.price-grid {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+/* --- Service-Like Section (Replacing Price Grid) --- */
+.service-like-section {
+    padding: 60px 0;
     text-align: center;
 }
 
-.price-item {
+.service-like-section h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.service-item {
     flex: 1;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    margin: 0 10px;
-    background: #fff;
+    padding: 0 20px;
+    border-right: 1px solid #e0e0e0; /* Vertical divider */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-.price-item.highlight {
-    border-color: var(--brand-color);
-    background-color: #fffaf5;
+.service-item:last-child {
+    border-right: none;
 }
 
-.price {
-    font-size: 1.5rem;
-    font-weight: bold;
+.icon-wrapper {
+    font-size: 2.5rem;
+    color: #4a4a4a; /* Dark grey like the sketch icons */
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.service-item h3 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 400;
+}
+
+.service-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    max-width: 200px;
+}
+
+.service-item a {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
     color: var(--brand-color);
+    text-decoration: none;
+    margin-top: 10px;
+    font-style: italic;
+    transition: opacity 0.3s;
+}
+
+.service-item a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .service-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .service-item {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .service-item:last-child {
+        border-bottom: none;
+    }
 }
 
 footer {
