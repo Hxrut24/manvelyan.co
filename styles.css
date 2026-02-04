@@ -3,6 +3,7 @@
     --text-color: #333333;
     --brand-color: #924d3e; /* That specific brownish-burgundy from the screenshot */
     --accent-color: #8c7b70;
+    --font-script: 'Pinyon Script', cursive; /* The Loro Piana logo style */
     --font-serif: 'Bodoni Moda', serif;
     --font-sans: 'Lato', sans-serif;
 }
@@ -45,13 +46,14 @@ body {
 }
 
 .brand-logo {
-    font-family: var(--font-serif);
-    font-size: 3rem; /* Large and prominent */
+    font-family: var(--font-script);
+    font-size: 4.5rem; /* Script fonts need to be larger to be legible */
     color: var(--brand-color);
     margin: 0;
-    font-weight: 500; /* Bodoni looks best at medium weights */
-    letter-spacing: -0.5px;
-    font-style: italic; /* Gives it that script-like elegance */
+    font-weight: 400; 
+    letter-spacing: 1px; /* Script fonts need less spacing usually, but a little helps elegance */
+    font-style: normal; /* Pinyon is already italic by nature */
+    line-height: 1.2;
 }
 
 /* Nav Bar */
