@@ -123,11 +123,11 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    max-width: 1400px; /* Limits the maximum width like Loro Piana */
-    margin: 0 auto; /* Centers the section */
-    height: 85vh;
-    padding: 0 40px; /* Adds padding on the sides */
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    max-width: 1100px; /* Reduced width to match Loro Piana style */
+    margin: 20px auto 0; /* Centered with top spacing */
+    height: 70vh; /* Reduced height so it doesn't fill the vertical screen */
+    padding: 0 20px; /* Side padding */
+    box-sizing: border-box;
 }
 
 .hero-image-container {
